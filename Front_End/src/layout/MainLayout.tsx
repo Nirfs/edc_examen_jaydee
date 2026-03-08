@@ -7,7 +7,7 @@ export function MainLayout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="flex h-screen w-full overflow-hidden">
+    <main className="flex h-screen w-full overflow-hidden">
       <button
         type="button"
         onClick={() => setIsMenuOpen(true)}
@@ -62,11 +62,11 @@ export function MainLayout() {
         </div>
       </aside>
 
-      <main className="min-w-0 flex-1 overflow-hidden p-5 pt-20 lg:flex lg:min-h-0 lg:flex-col lg:pt-5">
+      <div className="min-w-0 flex-1 overflow-hidden p-5 pt-20 lg:flex lg:min-h-0 lg:flex-col lg:pt-5">
         <div className="h-full lg:min-h-0 lg:flex-1">
           <Outlet />
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }

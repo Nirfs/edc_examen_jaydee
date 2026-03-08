@@ -248,7 +248,7 @@ export function BoardByID() {
     <div className="flex h-full flex-col">
       <header className="mb-5 shrink-0 rounded-md bg-white p-5">
         <p>{`Date de création > ${board?.dateCreated ? formatDate(board.dateCreated) : ""}`}</p>
-        <h1 className="text-xl font-bold">{board?.name}</h1>
+        <h2 className="text-xl font-bold">{board?.name}</h2>
       </header>
       <div className="flex min-h-0 flex-1 flex-col gap-5 overflow-hidden rounded-md bg-white p-5">
         <div className="flex shrink-0 flex-col gap-3 lg:flex-row lg:items-center">
