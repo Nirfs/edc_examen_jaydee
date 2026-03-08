@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../app");
+const app = require("../www/app");
 
 const validColumn = {
   name: "Nouvelle Colonne",
