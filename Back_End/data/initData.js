@@ -9,14 +9,14 @@ const Boards = [
 
 // Colonnes du Board 1
 const Columns = [
-  new Column("col-1", "À faire", "#6B7280", "1", "todo"),
+  new Column("col-1", "À faire", "#FF4444", "1", "todo"),
   new Column("col-2", "En cours", "#6366F1", "1", "inprogress"),
   new Column("col-3", "En revue", "#F59E0B", "1", "review"),
   new Column("col-4", "Terminé", "#22C55E", "1", "done"),
 
   // Colonnes du Board 2
   new Column("col-5", "Idées", "#EC4899", "2", "ideas"),
-  new Column("col-6", "Priorisé", "#F97316", "2", "prioritized"),
+  new Column("col-6", "Priorisé", "#F97v316", "2", "prioritized"),
 ];
 
 const Tasks = [

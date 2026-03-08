@@ -3,6 +3,7 @@ const router = require("express").Router();
 const boardsControllers = require("../controllers/boardsControllers");
 const columnControllers = require("../controllers/columnControllers");
 const taskControllers = require("../controllers/taskControllers");
+const validateTask = require("../middlewares/validateTask");
 
 // --- Boards ---
 router.get("/boards", boardsControllers.getBoards);
@@ -21,8 +22,8 @@ router.delete("/columns/:id", columnControllers.deleteColumn);
 // --- Tasks ---
 router.get("/tasks", taskControllers.getTasks);
 router.get("/tasks/:id", taskControllers.getTaskById);
-router.post("/tasks", taskControllers.createTask);
-router.put("/tasks/:id", taskControllers.modifyTask);
+router.post("/tasks", validateTask, taskControllers.createTask);
+router.put("/tasks/:id", validateTask, taskControllers.modifyTask);
 router.delete("/tasks/:id", taskControllers.deleteTask);
 
 module.exports = router;
